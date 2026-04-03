@@ -1,5 +1,5 @@
 import React from 'react'
-import JobCard from './components/jobCard'
+import JobCard from './components/JobCard'
 
 
 const App = () => {
