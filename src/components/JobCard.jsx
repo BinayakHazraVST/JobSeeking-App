@@ -12,6 +12,11 @@ const JobCard = (props) => {
         console.log("Button clicked! Current state is:", isSaved);
         setIsSaved(!isSaved)
     }
+
+    const handleApplyBtn=()=>{
+        window.open("/redirect.html", "_blank");
+    }
+
     return (
         <div className="jobCard">
             <div className="cardHead">
@@ -46,7 +51,7 @@ const JobCard = (props) => {
                         <div className='jobReportingPlace'>{props.location}</div>
                     </div>
 
-                    <div className='apply-btn'>Apply Now</div>
+                    <div className='apply-btn' onClick={handleApplyBtn}>Apply Now</div>
                 </div>
 
             </div>
