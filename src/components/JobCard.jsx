@@ -20,7 +20,7 @@ const JobCard = (props) => {
     return (
         <div className="jobCard">
             <div className="cardHead">
-                <div className="jobLogo"><img src={logoPath} alt="brandLogo" /></div>
+                <div className="jobLogo"><img src={logoPath} alt="brandLogo" loading='lazy'/></div>
                 <button className={isSaved ? `saved-btn` : `save-btn`} onClick={handleClick}>
                     {isSaved ? "Saved" : "Save"}
                     {isSaved ? (<BookmarkCheck color="#ffffff" size={14} strokeWidth={3} />) : (<Bookmark color="grey" size={14} strokeWidth={1} />)}
